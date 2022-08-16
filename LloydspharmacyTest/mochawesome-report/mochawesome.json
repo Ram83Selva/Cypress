@@ -1,0 +1,147 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 0,
+    "pending": 1,
+    "failures": 2,
+    "start": "2022-08-09T13:44:17.928Z",
+    "end": "2022-08-09T13:46:46.931Z",
+    "duration": 149003,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 33.33333333333333,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "aa33028d-232e-4df3-aeea-568819873c2f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Lloydstest.spec.cy.js",
+      "file": "cypress\\e2e\\Lloydstest.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ec5cb053-d8cd-4c08-b5da-83105d9b389a",
+          "title": "LloydsTest",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify blog title",
+              "fullTitle": "LloydsTest verify blog title",
+              "timedOut": null,
+              "duration": 69330,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.navigateToMedicinesAndVaccines();\ncy.selectHowToPreventMosquitoBites();\ncy.VerifyTitle_HowToPreventMosquitoBites();\nexpect(true).to.be.true;",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<h1.text-center>' to have text 'ABCD How to prevent mosquito bites', but the text was 'How to prevent mosquito bites'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<h1.text-center>' to have text 'ABCD How to prevent mosquito bites', but the text was 'How to prevent mosquito bites'\n    at Context.eval (https://onlinedoctor.lloydspharmacy.com/__cypress/tests?p=cypress\\support\\e2e.js:360:38)",
+                "diff": "- 'How to prevent mosquito bites'\n+ 'ABCD How to prevent mosquito bites'\n"
+              },
+              "uuid": "78cc682d-71cc-4e63-b543-280eb6b3a705",
+              "parentUUID": "ec5cb053-d8cd-4c08-b5da-83105d9b389a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify price",
+              "fullTitle": "LloydsTest verify price",
+              "timedOut": null,
+              "duration": 69355,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.Select_Morning_Afterpill();\ncy.Verify_ellaone_Treatment_Cost();\nexpect(true).to.be.true;",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<div.text-right.text-price.product-card__price.har-product-price.>' to have text '£83.00', but the text was '£33.00'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<div.text-right.text-price.product-card__price.har-product-price.>' to have text '£83.00', but the text was '£33.00'\n    at Context.eval (https://onlinedoctor.lloydspharmacy.com/__cypress/tests?p=cypress\\support\\e2e.js:367:85)",
+                "diff": "- '£33.00'\n+ '£83.00'\n"
+              },
+              "uuid": "b4fa0016-27bc-4320-b9e8-67cac7002478",
+              "parentUUID": "ec5cb053-d8cd-4c08-b5da-83105d9b389a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify finasteride pack size",
+              "fullTitle": "LloydsTest verify finasteride pack size",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "6ed41beb-da02-49b0-83e4-7dcbd75e1464",
+              "parentUUID": "ec5cb053-d8cd-4c08-b5da-83105d9b389a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "78cc682d-71cc-4e63-b543-280eb6b3a705",
+            "b4fa0016-27bc-4320-b9e8-67cac7002478"
+          ],
+          "pending": [
+            "6ed41beb-da02-49b0-83e4-7dcbd75e1464"
+          ],
+          "skipped": [],
+          "duration": 138685,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
